@@ -22,5 +22,11 @@ function hammingDistance(str1, str2) {
   /// other solution
   return str1.split("").filter((x, i) => str1[i] !== str2[i]).length;
 }
-
 console.log(hammingDistance("abcde", "bcdef"));
+
+function isIdentical(s) {
+  return s.split("").every((el) => el === s[0]);
+}
+
+console.log(isIdentical("ckfkk"));
+console.log(isIdentical("ccccc"));
