@@ -32,3 +32,12 @@ function googlify(n) {
 }
 
 console.log(googlify(8));
+
+////// recursion reverse string
+
+function reverse(str) {
+  return str === "" ? "" : reverse(str.substr(1)) + str[0];
+  //  return str === '' ? '' : reverse(str.substr(1)) + str.charAt(0)
+}
+
+console.log(reverse("hello"));
