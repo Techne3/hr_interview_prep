@@ -35,3 +35,29 @@ console.log(
     { name: "peach", price: 23 },
   ])
 );
+//////////
+
+function rogerShots(arr) {
+  let score = 0;
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === "Bang!" || arr[i] === "BangBang!") {
+      score += 0.5;
+    }
+  }
+
+  //   arr.filter(el => el === 'Bang!' || el === 'BangBang!').length * 0.5;
+
+  return score;
+}
+console.log(rogerShots(["Bang!", "Bang!", "Bang!", "Bang!", "Bang!", "Bang!"]));
+console.log(
+  rogerShots([
+    "Bang!",
+    "BangBangBang!",
+    "Boom!",
+    "Bang!",
+    "BangBang!",
+    "BangBang!",
+  ])
+);
