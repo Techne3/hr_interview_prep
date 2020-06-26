@@ -10,8 +10,7 @@ console.log(
     "er"
   )
 );
-console.log(cmsSelector(["try", "this"], ""));
-
+////////////////////
 function cmsSelectors(arr, str) {
   let cmsVal = [];
   for (i = 0; i < arr.length; i++) {
@@ -27,3 +26,30 @@ console.log(
     "er"
   )
 );
+
+/////////////////
+
+function sumEvenNumsInRange(start, stop) {
+  let addedEvens = 0;
+  for (i = start; i <= stop; i++) {
+    addedEvens += i % 2 === 0 ? i : 0;
+  }
+  return addedEvens;
+}
+
+console.log(sumEvenNumsInRange(51, 150));
+
+////////////////
+function countUnique(s1, s2) {
+  let result = [];
+  let array = s1.concat(s2).split("");
+  for (let ch of array)
+    if (!result.includes(ch)) {
+      result.push(ch);
+    }
+  return result.length;
+
+  /// 	return (new Set(s1 + s2)).size;
+}
+
+console.log(countUnique("apple", "play"));
