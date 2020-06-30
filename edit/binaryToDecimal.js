@@ -31,3 +31,11 @@ function multiplyNums(nums) {
 
 console.log(multiplyNums("2, 3"));
 console.log(multiplyNums("2"));
+/////////////////
+
+function clearFog(str) {
+  return str.match(/[fog]/g) ? str.replace(/[fog]/g, "") : "It's a clear day";
+}
+
+console.log(clearFog("fogfogfffoooofftreesggfoogfog"));
+console.log(clearFog("cat"));
