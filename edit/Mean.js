@@ -53,14 +53,28 @@ console.log(reverse("Hello World"));
 ////////////////////
 
 function shhh(sentence) {
-  let splitArr = sentence.split("");
-  let sliced = splitArr.slice(1, splitArr.length).join("").toLowerCase();
-  if (sentence) {
-    return `"${splitArr[0].toUpperCase()}${sliced}", whispered Edabit.`;
-  } else {
-    return `"", whispered Eabit`;
-  }
-  //   return first + sliced.join("").toLowerCase() + ",whispered Edabit";
+  //   let splitArr = sentence.split("");
+  //   let sliced = splitArr.slice(1, splitArr.length).join("").toLowerCase();
+  //   if (sentence) {
+  //     return `"${splitArr[0].toUpperCase()}${sliced}", whispered Edabit.`;
+  //   } else {
+  //     return `"", whispered Edabit`;
+  //   }
+  return (
+    JSON.stringify(
+      sentence.slice(0, 1).toUpperCase() + sentence.slice(1).toLowerCase()
+    ) + ", whispered Edabit."
+  );
 }
 
+console.log(shhh("HELLO THERE"));
 console.log(shhh(""));
+
+////////////
+
+function centuryFromYear(year) {
+  return Math.ceil(year / 100);
+}
+
+console.log(centuryFromYear(2005));
+console.log(centuryFromYear(1999));
