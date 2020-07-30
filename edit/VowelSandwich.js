@@ -16,3 +16,28 @@ function isVowelSandwich(str) {
 
 console.log(isVowelSandwich("cat"));
 console.log(isVowelSandwich("ear"));
+//////////////////////
+
+// https://edabit.com/challenge/LEPFNs6sgeAnJ7qqo
+
+function evenlyDivisible(a, b, c) {
+  let total = 0;
+  for (i = a; a <= b; a++) {
+    if (a % c === 0) {
+      total += a;
+    }
+  }
+  return total;
+}
+
+console.log(evenlyDivisible(1, 10, 2));
+
+/////////////////
+
+function testJackpot(result) {
+  return new Set(result).size === 1;
+  return result.every((x) => result[0] === x);
+}
+
+console.log(testJackpot(["@", "@", "@", "@"]));
+console.log(testJackpot(["&&", "&", "&&&", "&&&&"]));
