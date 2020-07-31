@@ -53,3 +53,44 @@ console.log(
     1
   )
 );
+
+function boomIntensity(n) {
+  if (n < 2) {
+    return "boom";
+  }
+  if (n % 2 === 0 && n % 5 === 0) {
+    return `B${"O".repeat(n)}M!`;
+  }
+  if (n % 2 === 0) {
+    return `B${"o".repeat(n)}m!`;
+  }
+  if (n % 5 === 0) {
+    return `B${"O".repeat(n)}M`;
+  } else {
+    return `B${"o".repeat(n)}m`;
+  }
+}
+
+console.log(boomIntensity(4));
+console.log(boomIntensity(0));
+console.log(boomIntensity(10));
+//////////////
+
+function getEquivalent(note) {
+  var obj = {
+    "C#": "Db",
+    Db: "C#",
+    "D#": "Eb",
+    Eb: "D#",
+    "F#": "Gb",
+    Gb: "F#",
+    "G#": "Ab",
+    Ab: "G#",
+    "A#": "Bb",
+    Bb: "A#",
+  };
+
+  return obj[note];
+}
+
+console.log(getEquivalent("D#"));
