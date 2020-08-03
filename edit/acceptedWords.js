@@ -35,3 +35,11 @@ function isEmpty(obj) {
 
 console.log(isEmpty({ 1: "b" }));
 console.log(isEmpty({}));
+////////////
+
+function clone(arr) {
+  arr.push([...arr]);
+  return arr;
+}
+
+console.log(clone([1, 2, 3]));

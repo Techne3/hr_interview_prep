@@ -16,3 +16,13 @@ var maximum69Number = function (num) {
 
 console.log(maximum69Number(9669));
 console.log(maximum69Number(9996));
+
+function makeTitle(str) {
+  return str
+    .split(" ")
+    .map((word) => {
+      return word[0].toUpperCase() + word.substr(1);
+    })
+    .join(" ");
+}
+console.log(makeTitle("This is a title"));
