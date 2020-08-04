@@ -24,3 +24,14 @@ function rps(p1, p2) {
 
 console.log(rps("Rock", "Paper"));
 console.log(rps("Scissors", "Paper"));
+//////////////////
+
+function XO(str) {
+  let x = str.split("").filter((x) => x.toLowerCase() === "x").length;
+  let o = str.split("").filter((o) => o.toLowerCase() === "o").length;
+
+  return x === o ? true : false;
+}
+
+console.log(XO("xooxx"));
+// console.log(XO("xoox"))
