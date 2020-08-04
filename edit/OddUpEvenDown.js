@@ -24,3 +24,18 @@ function dnaToRna(dna) {
 
 console.log(dnaToRna("ATTAGCGCGATATACGCGTAC"));
 console.log(dnaToRna("CGATATA"));
+
+///////////////
+
+function findNaN(number) {
+  //   number = number.toString().split(",");
+  //   for (let x of number) {
+  //     if (x === "NaN") {
+  //       return number.indexOf(x);
+  //     }
+  //   }
+  //   return -1;
+  return number.findIndex((a) => a.toString() === "NaN");
+}
+
+console.log(findNaN([1, 2, NaN]));
