@@ -10,3 +10,12 @@ function isLeap(year) {
 
 console.log(isLeap(2020));
 console.log(isLeap(2000));
+//////
+
+function checkPalindrome(inputString) {
+  let reversed = inputString.split("").reverse().join("");
+
+  return inputString === reversed ? true : false;
+}
+
+console.log(checkPalindrome("aabaa"));
