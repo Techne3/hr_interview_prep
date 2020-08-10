@@ -21,7 +21,6 @@ function makeArrayConsecutive2(statues) {
   let min = statues[0];
   let max = statues[statues.length - 1];
   for (let i = min; i < max; i++) {
-    console.log(i);
     if (statues.indexOf(i) === -1) {
       count.push(i);
     }
