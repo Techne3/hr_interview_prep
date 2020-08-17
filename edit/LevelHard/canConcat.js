@@ -9,7 +9,7 @@ console.log(canConcatenate([[1, 2, 3, 4], [5, 6], [7]], [1, 2, 3, 4, 5, 6, 7]));
 
 function convert(deg) {
   let res = "Error";
-  if (deg.indexOf("F") > 0) {
+  if (deg.indexOf("F") !== -1) {
     res = Math.round((parseFloat(deg) - 32) / 1.8) + "°C";
   } else {
     res = Math.round(parseFloat(deg) * 1.8 + 32) + "°F";
