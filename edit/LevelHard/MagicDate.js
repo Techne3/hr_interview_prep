@@ -24,3 +24,41 @@ function incrementToTop(arr) {
 }
 
 console.log(incrementToTop([3, 10, 3]));
+////////////
+function isAutomorphic(n) {
+  let square = n ** 2;
+  return square.toString().endsWith(n);
+}
+
+console.log(isAutomorphic(5));
+console.log(isAutomorphic(4));
+/////////////////
+function canAlternate(s) {
+  let filt0 = [...s].filter((x) => x === "0").length;
+  let filt1 = [...s].filter((x) => x === "1").length;
+
+  return Math.abs(filt0 - filt1) <= 1;
+}
+console.log(canAlternate("0001111"));
+console.log(canAlternate("10101010"));
+
+////////////////
+function calculateScores(str) {
+  let score = [0, 0, 0];
+  let strArr = str.split("");
+
+  for (let i = 0; i < strArr.length; i++) {
+    if (strArr[i].includes("A")) {
+      score[0]++;
+    }
+    if (strArr[i].includes("B")) {
+      score[1]++;
+    } else if (strArr[i].includes("C")) {
+      score[2]++;
+    }
+  }
+
+  return score;
+}
+
+console.log(calculateScores("ABCBACC"));
