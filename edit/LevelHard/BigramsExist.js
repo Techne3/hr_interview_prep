@@ -25,3 +25,19 @@ function secret(num) {
 
 console.log(secret(42));
 console.log(secret(52));
+
+/////////////////
+function countLayers(rug) {
+  let layerCount = 0;
+  let layerTracker = [];
+  for (let i = 0; i < rug.length; i++) {
+    if (layerTracker.indexOf(rug[i]) === -1) {
+      layerCount++;
+      layerTracker.push(rug[i]);
+    }
+  }
+  return layerTracker.length;
+}
+console.log(
+  countLayers(["AAAAAAAAA", "ABBBBBBBA", "ABBAAABBA", "ABBBBBBBA", "AAAAAAAAA"])
+);
