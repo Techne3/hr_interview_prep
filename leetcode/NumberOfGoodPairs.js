@@ -14,3 +14,10 @@ function numIdenticalPairs(nums) {
 }
 
 console.log(numIdenticalPairs([1, 2, 3, 1, 1, 3]));
+//////////////
+var maxProduct = function (nums) {
+  let sorted = nums.sort((a, b) => b - a);
+  return (sorted[0] - 1) * (sorted[1] - 1);
+};
+
+console.log(maxProduct([3, 4, 5, 2]));
