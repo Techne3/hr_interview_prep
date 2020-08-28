@@ -38,3 +38,35 @@ console.log(
 );
 
 ///////////
+
+function uniqueInOrder(sequence) {
+  return [...sequence].filter((a, i) => a !== sequence[i + 1]);
+}
+
+console.log(uniqueInOrder("AAAABBBCCDAABBB"));
+
+//////////////
+
+function isPalindrome(str) {
+  if (str.length < 2) return true;
+  if (str[0] === str[str.length - 1]) {
+    return isPalindrome(str.slice(1, str.length - 1));
+  }
+
+  return false;
+}
+
+console.log(isPalindrome("abassaba"));
+
+function isPalindromed(string) {
+  let sanitized = string.toLowerCase().replace(/[^a-z]/g, "");
+  console.log(sanitized);
+  let reversed = sanitized.split("").reverse().join("");
+  return reversed == sanitized;
+}
+
+console.log(
+  isPalindromed(
+    "A man, a plan, a cat, a ham, a yak, a yam, a hat, a canal-Panama!"
+  )
+);
