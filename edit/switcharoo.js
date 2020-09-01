@@ -70,3 +70,13 @@ console.log(
     "A man, a plan, a cat, a ham, a yak, a yam, a hat, a canal-Panama!"
   )
 );
+////////
+
+function simonSays(arr1, arr2) {
+  let first = arr1.slice(0, -1);
+  console.log(first);
+  let second = arr2.slice(1);
+  console.log(second);
+  return arr1.join("") == arr2.join("");
+}
+console.log(simonSays([1, 2, 3, 4], [1, 2, 3, 4]));
