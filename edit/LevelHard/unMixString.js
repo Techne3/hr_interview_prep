@@ -11,7 +11,8 @@ function unmix(str) {
 console.log(unmix("123456"));
 
 function isCorrectAliases(names, aliases) {
-  console.log(names.map((x) => x.split(" ")[0][0]));
+  const first = names.map((x, i) => x.split(" ")[0][0]);
+  console.log(first);
 
   return aliases.every(
     (item, index) =>
