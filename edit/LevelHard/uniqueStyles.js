@@ -31,3 +31,18 @@ function charAppears(sentence, char) {
 }
 
 console.log(charAppears("She sells sea shells by the seashore.", "s"));
+
+/////////
+
+function countIdenticalArrays(arr1, arr2, arr3, arr4) {
+  let arr = [
+    arr1.toString(),
+    arr2.toString(),
+    arr3.toString(),
+    arr4.toString(),
+  ];
+  let count = arr.length - new Set(arr).size;
+  return count === 0 ? 0 : count + 1;
+}
+
+console.log(countIdenticalArrays([0, 0, 0], [0, 1, 2], [0, 0, 0], [2, 1, 0]));
