@@ -55,10 +55,3 @@ function arrayOfMultiples(num, length) {
 }
 console.log(arrayOfMultiples(7, 5));
 ///
-
-function testJackpot(result) {
-  let dup = new Set(...result).size;
- return dup === 1
-  
-}
-console.log(testJackpot(["@", "@", "@", "@"]));
