@@ -98,3 +98,15 @@ function isPalindrome(wrd) {
 
 console.log(isPalindrome("adieu"));
 console.log(isPalindrome("aabbcc"));
+
+function isPal(word) {
+  const len = word.length;
+
+  if (len < 2) return true;
+
+  if (word[0] === word[len - 1]) {
+    return isPal(word.slice(1, len - 1));
+  }
+  return false;
+}
+console.log(isPal("aba"));
