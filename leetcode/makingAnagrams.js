@@ -28,4 +28,4 @@ function makingAnagrams(a, b) {
   return count;
 }
 
-console.log(makingAnagrams("cde", "def"));
+console.log(makingAnagrams("cde", "dcf"));

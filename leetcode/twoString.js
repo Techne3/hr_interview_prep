@@ -11,4 +11,4 @@ function twoStrings(s1, s2) {
   return "NO";
 }
 console.log(twoStrings("and", "art"));
-console.log(twoStrings("be", "cat"));
+// console.log(twoStrings("be", "cat"));

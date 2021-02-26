@@ -18,7 +18,7 @@ function ransomNote(magazine, note) {
     }
   }
 
-  return ransom ? true : false;
+  return ransom;
 }
 
 console.log(
