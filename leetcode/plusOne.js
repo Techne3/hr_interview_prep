@@ -7,8 +7,8 @@ function plusOne(digits) {
       digits[i] = 0;
     }
   }
-
   digits.unshift(1);
+
   return digits;
 }
 

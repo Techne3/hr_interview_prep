@@ -4,6 +4,7 @@ function findMin(nums) {
 
   while (left < right) {
     let midPoint = Math.floor((left + right) / 2);
+
     if (nums[midPoint] > nums[right]) {
       left = midPoint;
     } else {
