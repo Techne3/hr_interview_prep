@@ -1,16 +1,11 @@
-var reverse = function (x) {
-  let sign = Math.sign(x);
-  x = Math.abs(x);
-  let reversed = 0;
-  while (x > 0) {
-    let lsb = x % 10;
-    reversed = reversed * 10 + lsb;
-    x = Math.floor(x / 10);
-  }
-  if (reversed > 2 ** 31 - 1) return 0;
-  reversed = sign * reversed;
-  return reversed;
-};
+function reverse(x) {
+  if (x > 2 ** 31 - 1) return 0;
+  let reversed = parseInt(
+    (x + "").replace("-", "").split("").reverse().join("")
+  );
+
+  return x < 0 ? reversed * -1 : reversed;
+}
 
 console.log(reverse(-123));
-// console.log(reverseInt(120))
+console.log(reverse(120));
