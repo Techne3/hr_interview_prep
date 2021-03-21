@@ -12,6 +12,7 @@ function threeSums(nums) {
     if (i > 0 && nums[i] == nums[i - 1]) {
       continue;
     }
+
     for (let j = i + 1, k = nums.length - 1; j < k; ) {
       if (nums[i] + nums[j] + nums[k] === 0) {
         rtn.push([nums[i], nums[j], nums[k]]);
