@@ -5,6 +5,8 @@ function numJewels(J, S) {
   for (const jewel of J) {
     jewelsMap[jewel] = true;
   }
+
+  console.log(jewelsMap);
   for (const stone of S) {
     if (stone in jewelsMap) {
       count++;
