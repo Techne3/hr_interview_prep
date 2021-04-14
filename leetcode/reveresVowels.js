@@ -3,6 +3,7 @@ function reverseVowels(s) {
   for (const char of "aeiouAEIOU") {
     vowels[char] = true;
   }
+
   const characters = s.split("");
   let left = 0;
   let right = s.length - 1;
@@ -30,3 +31,5 @@ function swap(arr, i, j) {
 }
 
 console.log(reverseVowels("hello"));
+//  time comp: 0(N)
+// space comp: 0(N)
