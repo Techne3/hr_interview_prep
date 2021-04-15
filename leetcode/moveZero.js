@@ -15,4 +15,4 @@ function moveZero(n) {
   return n;
 }
 
-console.log(moveZero([0, 1, 0, 3, 12]));
+console.log(moveZero([0, 13, 0, 3, 12]));
