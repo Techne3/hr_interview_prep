@@ -1,5 +1,6 @@
 function Power3(n) {
-  while (n % 3 == 0) {
+  if (n == 0) return false;
+  while (n % 3 === 0) {
     n /= 3;
   }
   return n === 1;
@@ -7,3 +8,4 @@ function Power3(n) {
 
 console.log(Power3(27));
 console.log(Power3(45));
+console.log(Power3(0));
