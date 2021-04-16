@@ -5,7 +5,7 @@ function Symmetric(root) {
     if (!node1 && !node2) {
       return;
     }
-    if (!node1 || !node2 || node1.val === node2.val) {
+    if (!node1 || !node2 || node1.val !== node2.val) {
       res = false;
       return;
     }
