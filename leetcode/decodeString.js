@@ -7,6 +7,7 @@ function decode(s) {
   for (let char of s) {
     if (!isNaN(char)) {
       tempMult = `${tempMult}${char}`;
+      console.log(tempMult);
     } else if (char === "[") {
       multiply.push(tempMult);
       tempMult = "";
