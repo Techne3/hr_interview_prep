@@ -26,6 +26,7 @@ function longetsPal(s){
              center =i
              rightBoundary = i + P[i]
          }
+        }
 
         let leng = Math.max(...P)
         let index = P.indexOf(leng)
@@ -42,8 +43,6 @@ function longetsPal(s){
             newHashWord +="#"
         }
         return newHashWord
-    }
-
 
 }
 
