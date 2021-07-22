@@ -5,3 +5,5 @@ var titleToNumber = function (s) {
   }
   return total;
 };
+
+console.log(titleToNumber("AA"));
