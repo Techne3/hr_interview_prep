@@ -1,7 +1,7 @@
-function diamond(stars) {
-  var width = 5;
-  var num = (width + 1) / 2;
-  for (let i = num - 1; i > -num; i--) {
+function diamond(num) {
+  var stars = "";
+  var num = (num + 1) / 2;
+  for (let i = num; i > -num; i--) {
     for (let j = num - Math.abs(i); j < num; j++) {
       stars += " ";
     }
