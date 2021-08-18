@@ -17,3 +17,5 @@ var divide = function (dividend, divisor) {
   }
   return sign * result;
 };
+
+console.log(divide(2147483647, -1000));
