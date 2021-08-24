@@ -18,3 +18,5 @@ var countAndSay = function (n) {
   }
   return str;
 };
+
+console.log(countAndSay(6));
