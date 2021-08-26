@@ -23,8 +23,11 @@ console.log(sorted_counter[0][0]);
 // [["oranges", 4], ["bananas", 2], ["apples", 1]]
 
 // show only keys of the sorted array
-console.log(sorted_counter.map((x) => x[0]));
+console.log(sorted_counter.map((x) => x));
 // ["oranges", "bananas", "apples"]
 
 /////////////
-const partall = (a) => a.filter((e) => !(e % 2));
+
+var arrs = ["cats", "monkey", "dog", "fish"];
+let filtered = arrs.filter((a, i) => i % 2 !== 0);
+console.log(filtered);
