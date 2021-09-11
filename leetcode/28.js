@@ -23,3 +23,13 @@ var strStr = function (haystack, needle) {
 
   return -1;
 };
+var searchInsert = function (nums, target) {
+  // if nums includes target, return its index
+  if (nums.includes(target)) return nums.indexOf(target);
+  //else push the target in to nums and sort it, and then return its index
+  else {
+    nums.push(target);
+    nums.sort((a, b) => a - b);
+    return nums.indexOf(target);
+  }
+};

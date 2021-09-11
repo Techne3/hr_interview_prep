@@ -11,6 +11,7 @@ function decode(s) {
     } else if (char === "[") {
       multiply.push(tempMult);
       tempMult = "";
+      console.log(tempMult);
 
       repeatStr.push(solution);
       solution = "";
