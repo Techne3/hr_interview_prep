@@ -7,6 +7,7 @@ const isInterleave = function (s1, s2, s3) {
     if (i == s1.length && j == s2.length) return true;
 
     let key = Array.prototype.join.call(arguments, ',');
+    console.log(key);
 
     if (cache[key] !== undefined) return cache[key];
 
@@ -25,3 +26,5 @@ const isInterleave = function (s1, s2, s3) {
     return (cache[key] = ans);
   }
 };
+
+console.log(isInterleave('aabcc', 'dbbca', 'aadbbcbcac'));
