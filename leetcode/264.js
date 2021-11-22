@@ -16,3 +16,4 @@ var nthUglyNumber = function (n) {
   }
   return k[n - 1];
 };
+
