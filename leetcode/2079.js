@@ -7,7 +7,7 @@ var wateringPlants = function (plants, capacity) {
       // cannot be fully watered
 
       steps += i; // go i steps back, to river
-      curr_cap = capacity; // refill capacity
+      `curr_cap` = capacity; // refill capacity
       steps += i; // come back i steps, to this plant - because before plants are already watered
     }
 
