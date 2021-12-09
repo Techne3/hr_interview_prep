@@ -7,8 +7,10 @@ var majorityElement = function (nums) {
   }
 
   Object.keys(sets).forEach((key) => {
+    console.log(sets);
     if (sets[key] > nums.length / 3) res.push(key);
   });
 
   return res;
 };
+console.log(majorityElement([3, 2, 3]));

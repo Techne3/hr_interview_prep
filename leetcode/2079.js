@@ -19,3 +19,8 @@ var wateringPlants = function (plants, capacity) {
 
   return steps;
 };
+
+
+function subArr(arr, n, sum){
+  
+}
